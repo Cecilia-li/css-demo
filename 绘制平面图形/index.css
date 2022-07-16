@@ -1,0 +1,46 @@
+/* 1. 圆形 */
+/* .container {
+  width: 200px;
+  height: 200px;
+  background-color: yellowgreen;
+  border-radius: 100px;
+} */
+
+/* 2. 三角形 */
+/* .container {
+  width: 0;
+  height: 0;
+  border: 200px solid transparent;
+  border-bottom: 200px solid yellowgreen;
+} */
+
+/* 3. 扇形 */
+/* .container {
+  width: 200px;
+  height: 200px;
+  background-color: yellowgreen;
+  border-radius: 200px 0 0 0;
+}  */
+
+/* 4. 菱形 */
+body {
+  margin: 0;
+}
+
+.container {
+  width: 0;
+  height: 0;
+  border: 200px solid transparent;
+  border-bottom: 200px solid yellowgreen;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 200px solid transparent;
+  border-top: 200px solid yellowgreen;
+}
